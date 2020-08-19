@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/indie-com-farofa/static/css/main.805d5014.chunk.css",
+    "main.js": "/indie-com-farofa/static/js/main.b5c785c1.chunk.js",
+    "main.js.map": "/indie-com-farofa/static/js/main.b5c785c1.chunk.js.map",
+    "runtime-main.js": "/indie-com-farofa/static/js/runtime-main.8df268de.js",
+    "runtime-main.js.map": "/indie-com-farofa/static/js/runtime-main.8df268de.js.map",
+    "static/js/2.80bcef85.chunk.js": "/indie-com-farofa/static/js/2.80bcef85.chunk.js",
+    "static/js/2.80bcef85.chunk.js.map": "/indie-com-farofa/static/js/2.80bcef85.chunk.js.map",
+    "index.html": "/indie-com-farofa/index.html",
+    "precache-manifest.3c7399e7087105f2361085fe70dbe86d.js": "/indie-com-farofa/precache-manifest.3c7399e7087105f2361085fe70dbe86d.js",
+    "service-worker.js": "/indie-com-farofa/service-worker.js",
+    "static/css/main.805d5014.chunk.css.map": "/indie-com-farofa/static/css/main.805d5014.chunk.css.map",
+    "static/js/2.80bcef85.chunk.js.LICENSE.txt": "/indie-com-farofa/static/js/2.80bcef85.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/indie-com-farofa/static/media/colorfull-logo.f62cd7ad.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8df268de.js",
+    "static/js/2.80bcef85.chunk.js",
+    "static/css/main.805d5014.chunk.css",
+    "static/js/main.b5c785c1.chunk.js"
+  ]
+}
