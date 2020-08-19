@@ -1,0 +1,157 @@
+@import "../../GlobalStyles/variables";
+
+.AppHeader {
+  height: 155px;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 75% 25%;
+
+  //   MEDIA
+  .HeaderMedia {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: $dark-brown;
+
+    .IndieComFarofaPresent {
+      margin-left: 80px;
+      height: 100%;
+      width: 220px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      color: #fff;
+
+      .IndieComFarofaLogo {
+        width: 40px;
+        height: 40px;
+        box-shadow: 2px 3px 4px #00000025;
+
+        img {
+          width: 100%;
+          height: 100%;
+          filter: brightness(1.1) contrast(1.2);
+        }
+      }
+
+      .IndieComFarofaText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1 {
+          margin-bottom: 2px;
+          font-size: 1.4rem;
+          font-family: $font-oswald;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+
+        h2 {
+          font-size: 0.95rem;
+          font-family: $font-open-sans;
+          font-weight: 400;
+          color: $yellow-bege;
+        }
+      }
+    }
+  }
+
+  //   NAVIGATION + CONTROLS
+  .HeaderContent {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #fff;
+
+    box-shadow: 2px 3px 4px #00000025;
+
+    .HeaderNavigation {
+      width: 40%;
+      display: flex;
+      //   justify-content: center;
+      ul {
+        margin: 90px;
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        .NavLink {
+          height: 100%;
+          margin: 0;
+          margin-right: 10px;
+          list-style: none;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          a {
+            padding: 4px;
+            height: 100%;
+
+            color: $dark-brown;
+            text-decoration: none;
+            font-size: 0.95rem;
+
+            transition: $main-transition;
+
+            &.active,
+            &:hover {
+              background-color: $dark-brown;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .SocialMedia {
+      margin-right: 80px;
+      width: max-content;
+
+      display: flex;
+      align-items: center;
+
+      .SocialMediaIcons {
+        margin-left: 10px;
+        padding: 2px;
+
+        display: flex;
+        align-items: center;
+
+        border-radius: 100px;
+        transition: $main-transition;
+
+        &:hover {
+          background-color: $yellow-bege;
+        }
+      }
+
+      .SocialEmail {
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-style: italic;
+        color: $dark-brown;
+
+        transition: $main-transition;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
