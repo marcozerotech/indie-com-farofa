@@ -1,0 +1,53 @@
+@import "../../GlobalStyles/variables";
+
+.PostCard {
+  margin-right: 35px;
+  height: 250px;
+
+  //   box-shadow: 3px 3px 4px #d1c89e40;
+  transition: $main-transition;
+
+  &:focus,
+  &:hover {
+    transform: scale(1.06);
+  }
+
+  a {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #00000060;
+    text-decoration: none;
+    color: #fff;
+    z-index: 100;
+
+    h4 {
+      padding: 3px;
+
+      color: $yellow-bege;
+      text-shadow: 3px 2px 4px #00000030;
+
+      border-radius: 4px;
+
+      font-family: $font-oswald;
+      font-size: 1.5rem;
+
+      transition: $main-transition;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      font-family: $font-soft;
+      font-style: italic;
+    }
+  }
+}

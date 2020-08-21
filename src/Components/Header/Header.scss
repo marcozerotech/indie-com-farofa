@@ -1,11 +1,13 @@
 @import "../../GlobalStyles/variables";
 
 .AppHeader {
-  height: 155px;
+  height: $header-height;
   width: 100%;
 
   display: grid;
   grid-template-rows: 75% 25%;
+  position: sticky;
+  top: calc(-155px + 155px * 0.25);
 
   //   MEDIA
   .HeaderMedia {

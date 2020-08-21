@@ -1,0 +1,110 @@
+@import "../../GlobalStyles/variables";
+
+.ContentSection {
+  padding: 130px 100px;
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "player blogPosts"
+    "player recentSongs";
+
+  background-color: $dark-brown;
+
+  .RecentBlogPosts {
+    grid-area: blogPosts;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 100%;
+
+    align-self: center;
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 30px;
+      text-align: start;
+      letter-spacing: 0.8px;
+
+      font-family: $font-oswald;
+      font-size: 2.5rem;
+
+      color: $yellow-bege;
+
+      border-bottom: 2px solid $bege;
+    }
+
+    .PostList {
+      display: flex;
+      align-items: center;
+      //   justify-content: center;
+      .PostCard {
+        min-width: 250px;
+        max-width: 300px;
+      }
+    }
+  }
+
+  .RecentSongs {
+    grid-area: recentSongs;
+    width: 90%;
+    height: 100%;
+
+    align-self: center;
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 30px;
+      text-align: start;
+      letter-spacing: 0.8px;
+
+      font-family: $font-oswald;
+      font-size: 2.5rem;
+
+      color: $yellow-bege;
+
+      border-bottom: 2px solid $bege;
+    }
+
+    .SectionDescription {
+      margin-bottom: 20px;
+      color: #fff;
+      font-family: $font-soft;
+      font-size: 1.1rem;
+    }
+
+    .SongList {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      //   justify-content: center;
+    }
+  }
+
+  .SpotifyPlayerSection {
+    grid-area: player;
+    border-right: 10px double $yellow-bege;
+
+    h2 {
+      margin-bottom: 30px;
+      text-align: start;
+      letter-spacing: 0.8px;
+
+      font-family: $font-oswald;
+      font-size: 2.8rem;
+
+      color: $yellow-bege;
+      //   text-decoration: underline;
+
+      //   border-bottom: 2px solid $bege;
+    }
+  }
+}

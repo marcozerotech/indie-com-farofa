@@ -9,6 +9,6 @@
 
   background-image: url("./Assets/logos/colorfull-logo.jpg");
   background-repeat: no-repeat;
-  background-position: initial;
+  background-attachment: fixed;
   font-family: "Open Sans";
 }

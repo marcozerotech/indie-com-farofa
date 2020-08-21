@@ -1,0 +1,59 @@
+@import "../../GlobalStyles/variables";
+
+.SongCard {
+  height: 250px;
+  min-width: 250px;
+  max-width: 300px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+
+  .SongCardImg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    img {
+      height: 100%;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    &:hover img {
+      //   filter: blur(3px);
+      opacity: 0.6;
+    }
+  }
+
+  .SongCardImg::after {
+    content: url("../../Assets/spotify-icons-logos/icons/01_RGB/02_PNG/Spotify_Icon_RGB_Green.png");
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: scale(0);
+    transform-origin: center;
+    transition: $main-transition;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .SongCardImg:hover::after {
+    transform: scale(0.08);
+  }
+
+  .SongInfo {
+    margin-top: 5px;
+    width: 100%;
+    h4 {
+      color: $yellow-bege;
+      font-size: 1.25rem;
+    }
+
+    p {
+      color: #fff;
+      font-family: $font-soft;
+    }
+  }
+}

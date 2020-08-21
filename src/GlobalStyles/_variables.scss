@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Oswald:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600&display=swap");
 
 $black: #0d0704;
 $dark-brown: #342c24;
@@ -9,5 +10,10 @@ $title-font: "Oswald", sans-serif;
 $text-font: "Open Sans", sans-serif;
 $font-oswald: "Oswald", sans-serif;
 $font-open-sans: "Open Sans", sans-serif;
+$font-soft: "Baloo Tamma 2", cursive;
 
 $main-transition: all 0.25s ease-out;
+$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+  0 1px 3px 1px rgba(60, 64, 67, 0.15);
+
+$header-height: 155px;
