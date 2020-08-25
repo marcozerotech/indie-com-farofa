@@ -36,9 +36,11 @@ const header = (props) => {
                 Início
               </NavLink>
             </li>
-            <li className="NavLink">
-              <NavLink to="/novidades">Novidades</NavLink>
-            </li>
+            {props.navLinks.map((navLink) => (
+              <li key={navLink.value} className="NavLink">
+                <NavLink to={navLink.route}>{navLink.name}</NavLink>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className="SocialMedia">

@@ -7,6 +7,12 @@ import * as actions from "./Services/store/actions";
 import Header from "./Components/Header/Header";
 import HomePage from "./Containers/HomePage/HomePage";
 
+const topics = [
+  //NAV LINKS TO RENDER
+  { name: "Notícias", category: "news", route: "/revista/noticias" },
+  { name: "Artistas", category: "artists", route: "/revista/artistas" },
+];
+
 function App(props) {
   const { artists, posts, songs, fetchArtists, fetchPosts, fetchSongs } = props;
 
@@ -18,10 +24,15 @@ function App(props) {
 
   return (
     <div className="App">
-      <Header />
+      <Header navLinks={topics} />
       <Switch>
         <Route path="/eventos" component={""} />
-        <Route path="/novidades" render={(props) => <h2>NEWS SECTION</h2>} />
+        <Route
+          path="/revista/:category"
+          render={(props) => (
+            <h2>REVISTA SECTION - category: {props.match.params}</h2>
+          )}
+        />
         <Route
           path="/"
           render={(props) => (
